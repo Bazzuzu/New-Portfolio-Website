@@ -14,8 +14,13 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
-  /* 3 Typography Styles */
-  /* Заголовок: 18 / 120% / Medium */
+  /* Typography Styles */
+  /* Заголовок страницы: 32 / 120% / Medium */
+  --text-display-size: 2rem;       /* 32px */
+  --text-display-line: 1.2;        /* 120% */
+  --text-display-weight: var(--font-weight-medium);
+
+  /* Заголовок секции: 18 / 120% / Medium */
   --text-heading-size: 1.125rem;   /* 18px */
   --text-heading-line: 1.2;        /* 120% */
   --text-heading-weight: var(--font-weight-medium);
@@ -62,6 +67,7 @@
   --space-4: 1rem;               /* 16px */
   --space-6: 1.5rem;             /* 24px */
   --space-8: 2rem;               /* 32px */
+  --space-16: 4rem;              /* 64px */
 
   /* Components: Surface, Border, Radius, Shadow */
   --color-surface: #ffffff;
@@ -74,6 +80,7 @@
   --z-tooltip: 100;
   --card-width-sm: 20rem;        /* 320px */
   --card-width-portrait: 15rem;  /* 240px */
+  --author-photo-size: 226px;    /* 226px — круглый портрет автора */
   --duration-fast: 0.15s;
   --ease-default: ease;
 }

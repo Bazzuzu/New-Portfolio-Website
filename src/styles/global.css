@@ -70,6 +70,13 @@ svg {
 }
 
 /* Typography Utility Classes */
+.text-display {
+  font-size: var(--text-display-size);
+  line-height: var(--text-display-line);
+  font-weight: var(--text-display-weight);
+  color: var(--color-text-primary);
+}
+
 .text-heading {
   font-size: var(--text-heading-size);
   line-height: var(--text-heading-line);

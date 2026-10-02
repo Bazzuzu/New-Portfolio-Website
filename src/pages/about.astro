@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
 ---
 
 <BaseLayout
@@ -17,9 +19,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </a>
       </header>
 
-      <!-- 1. Marketing Roots & Systemic Thinking -->
+      <!-- 1. Hero: Author Portrait & Page Title -->
+      <section class="about-hero">
+        <div class="author-portrait">
+          <Image
+            src={authorImg}
+            alt="Oleksandr Konovalov"
+            width={226}
+            height={226}
+            densities={[1, 2]}
+            quality={88}
+            class="author-img"
+          />
+        </div>
+        <h1 class="text-display">About me</h1>
+      </section>
+
+      <!-- 2. Marketing Roots & Systemic Thinking -->
       <section class="block-section">
-        <h1 class="text-heading">Marketing Roots & Systemic Thinking</h1>
+        <h2 class="text-heading">Marketing Roots & Systemic Thinking</h2>
         <div class="prose-block">
           <p class="text-body-md text-secondary">
             My product design career started in 2017, but my foundation was built in marketing for major automotive brands. That background wired my brain to rely on historical data, potential metrics, and strict processes to manage high-volume workloads.
@@ -311,6 +329,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .brand-logo {
     width: 37px;
     height: 32px;
+  }
+
+  /* ==========================================================================
+     About Hero: Portrait & Title
+     ========================================================================== */
+  .about-hero {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .author-portrait {
+    width: var(--author-photo-size);
+    height: var(--author-photo-size);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+
+  .author-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+    display: block;
   }
 
   /* ==========================================================================
