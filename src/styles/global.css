@@ -18,6 +18,14 @@ body {
   min-height: 100%;
 }
 
+html {
+  color-scheme: light dark;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
   background-color: var(--color-canvas);
   color: var(--color-text-primary);
@@ -26,6 +34,7 @@ body {
   line-height: var(--text-body-1-line);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--duration-fast) var(--ease-default), color var(--duration-fast) var(--ease-default);
 }
 
 body:has(#details:target) {
