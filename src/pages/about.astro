@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
+import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
 ---
 
 <BaseLayout
@@ -122,7 +123,7 @@ import authorImg from '../../content/author/media/author-oleksandr-konovalov-por
       </section>
 
       <!-- 3. My Pragmatic Toolkit -->
-      <section class="block-section">
+      <section class="block-section" id="pragmatic-toolkit">
         <h2 class="text-heading">My Pragmatic Toolkit</h2>
         <p class="text-body-md text-secondary">
           Real-world product design is messy. Instead of forcing textbook frameworks like the "Double Diamond," I use a modular toolkit adapted to your actual constraints and legacy code.
@@ -290,6 +291,7 @@ import authorImg from '../../content/author/media/author-oleksandr-konovalov-por
       </footer>
     </main>
   </div>
+  <PragmaticToolkitModal />
 </BaseLayout>
 
 <style>

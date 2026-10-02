@@ -81,6 +81,11 @@
   --card-width-sm: 20rem;        /* 320px */
   --card-width-portrait: 15rem;  /* 240px */
   --author-photo-size: 7.5rem;    /* 120px — круглый портрет автора */
+  --modal-width-lg: 56rem;        /* 896px — ширина модального окна Pragmatic Toolkit */
+  --color-backdrop: rgba(0, 0, 0, 0.40); /* 40% черного — затемнение фона модалки */
+  --shadow-modal: 0 20px 48px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --z-modal: 200;
+  --toolkit-icon-size: 2.25rem;   /* 36px — размер иконки в тулките */
   --duration-fast: 0.15s;
   --ease-default: ease;
 }

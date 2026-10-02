@@ -28,6 +28,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body:has(#details:target) {
+  overflow: hidden;
+}
+
 /* ==========================================================================
    Typography Primitives
    ========================================================================== */
