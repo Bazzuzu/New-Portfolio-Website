@@ -67,8 +67,14 @@
       right: 0;
       padding-inline: var(--footer-px);
       padding-block: var(--space-4) var(--footer-pb);
-      background-color: var(--color-canvas);
+      background: transparent;
+      pointer-events: none;
       z-index: 10;
+    }
+
+    .footer-copy,
+    .footer-nav {
+      pointer-events: auto;
     }
   }
 
