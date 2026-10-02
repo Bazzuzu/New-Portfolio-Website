@@ -8,11 +8,59 @@ import newsletterFormImg from '../../content/work/concepts/designing-my-first-ne
 import aiPrototypingImg from '../../content/work/concepts/how-ai-augmented-prototyping-cut-b2b-design-time-by-90/media/ai-augmented-prototyping-b2b-matrix-desktop.png';
 import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
 import Footer from '../components/Footer.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://new.lexkonovalov.com/#website",
+      "url": "https://new.lexkonovalov.com",
+      "name": "Oleksandr Konovalov — Lead Product Designer",
+      "description": "Lead Product Designer in TravelTech. Mapping complex logic. Optimizing conversion.",
+      "publisher": {
+        "@id": "https://new.lexkonovalov.com/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://new.lexkonovalov.com/#person",
+      "name": "Oleksandr Konovalov",
+      "alternateName": ["Lex Konovalov", "Oleksandr 'Lex' Konovalov"],
+      "jobTitle": "Lead Product Designer",
+      "description": "Lead Product Designer specializing in TravelTech ERP systems, B2B architecture, B2C conversion rate optimization, and Object-Oriented UX (OOUX).",
+      "url": "https://new.lexkonovalov.com",
+      "image": "https://new.lexkonovalov.com/og-image.png",
+      "email": "mailto:lex.konovalov@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/lex-konovalov",
+        "https://github.com/Bazzuzu",
+        "https://drive.google.com/file/d/1abYC91Gx0G_dNBBC-tOrIXlTc2Wrfx_u/view?usp=sharing"
+      ],
+      "knowsAbout": [
+        "Product Design",
+        "Object-Oriented UX (OOUX)",
+        "Design Systems",
+        "Semantic Design Tokens",
+        "Conversion Rate Optimization (CRO)",
+        "TravelTech Software Architecture",
+        "Enterprise B2B Software",
+        "Rapid AI Prototyping"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Valencia Region",
+        "addressCountry": "ES"
+      }
+    }
+  ]
+};
 ---
 
 <BaseLayout
   title="Oleksandr Konovalov — Lead Product Designer"
   description="Lead Product Designer in TravelTech. Mapping complex logic. Optimizing conversion."
+  jsonLd={jsonLd}
 >
   <div class="home-canvas">
     <main class="content-column home-main">

@@ -1,0 +1,43 @@
+# Oleksandr (Lex) Konovalov — Lead Product Designer
+
+> Lead Product Designer specializing in TravelTech, complex B2B systems architecture, B2C conversion rate optimization (CRO), and Object-Oriented UX (OOUX).
+
+## Summary
+- **Name**: Oleksandr Konovalov (Lex Konovalov)
+- **Role**: Lead Product Designer
+- **Specialization**: B2B Architecture, TravelTech ERPs, B2C Conversion Rate Optimization (CRO), Object-Oriented UX (OOUX), AI-Augmented Prototyping, Semantic Design Systems
+- **Location**: Valencia Region, Spain (Open to EU relocation; US/EU async collaboration)
+- **Languages**: English (Fluent, full professional proficiency), Ukrainian (Native)
+- **Contact**: lex.konovalov@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/lex-konovalov
+- **Portfolio**: https://new.lexkonovalov.com
+
+## Core Philosophy & The Pragmatic Toolkit
+1. **Ship, Measure, Iterate**: Fast releases, real analytics, and continuous improvement over endless pre-launch polishing.
+2. **Architecture Before Pixels**: Object-Oriented UX (OOUX) mapping defines product structures, database realities, and backend logic before UI screens.
+3. **Modular Design Process**: Pragmatic execution adapted to real-world constraints over textbook double-diamond dogmas.
+4. **Rapid AI Prototyping**: Interactive code prototypes as the fastest alignment tool for stakeholders and early assumption testing.
+5. **Cognitive Minimalism**: Clean, concise UI copy and frictionless workflows.
+6. **Obsessive Data Coverage**: Analytics integration from day one to guide CRO and product decisions.
+7. **Semantic Design Systems**: Machine-readable tokens and strict accessibility (EU a11y) standards that LLMs and developers can reliably execute.
+8. **The Quantum Physics of Time**: Strict scoping and pragmatic delivery to prevent open-ended design loops.
+9. **Embracing Legacy Systems**: Finding high-leverage solutions within existing backend and legacy constraints (SLDS, ancient .NET, complex APIs).
+
+## Selected Works
+- **Building the OS for Travel**: Untangling multi-supplier flight/hotel booking matrices, complex business logic, and B2B workflows in TravelTech ERP.
+- **Optimizing Mobile Lead Gen**: CRO-driven redesign of high-volume acquisition funnels and checkout flows.
+- **Homepage & Funnel Structure**: Architecture overhaul mapping user intent to high-converting product discovery paths.
+
+## Concepts & Systemic Wins
+- **Designing My First Newsletter Form After 10 Years In UX**: Friction reduction, zero-CLS input UX, and micro-conversions.
+- **How AI-Augmented Prototyping Cut B2B Design Time by 90%**: Leveraging AI tooling to bridge design tokens, code execution, and stakeholder sign-off.
+
+## Contract & Collaboration Setup
+- **Work Authorization**: EU-compliant B2B contracts, international payroll/EOR (Deel, Remote).
+- **Working Hours**: Synchronous overlap with US East/West Coast and European teams; async documentation via Loom, markdown, and precise ticket handoffs.
+
+## Links & Documents
+- **Portfolio**: https://new.lexkonovalov.com
+- **About & Pre-Emptive Interview**: https://new.lexkonovalov.com/about
+- **CV**: https://drive.google.com/file/d/1abYC91Gx0G_dNBBC-tOrIXlTc2Wrfx_u/view?usp=sharing
+- **LinkedIn**: https://www.linkedin.com/in/lex-konovalov

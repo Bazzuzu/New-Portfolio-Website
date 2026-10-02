@@ -4,12 +4,23 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  type?: 'website' | 'profile' | 'article';
+  jsonLd?: Record<string, any> | Array<Record<string, any>>;
 }
 
 const {
   title = "Oleksandr Konovalov — Lead Product Designer",
   description = "Lead Product Designer in TravelTech. Mapping complex logic. Optimizing conversion.",
+  image = "/og-image.png",
+  type = "website",
+  jsonLd,
 } = Astro.props;
+
+const siteUrl = Astro.site ?? new URL('https://new.lexkonovalov.com');
+const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+const canonicalURL = new URL(cleanPath, siteUrl).href;
+const imageURL = new URL(image, siteUrl).href;
 ---
 
 <!doctype html>
@@ -19,14 +30,37 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:site_name" content="Oleksandr Konovalov" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content={type} />
+    <meta property="og:image" content={imageURL} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageURL} />
+
+    <!-- Icons & Themes -->
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" type="image/svg+xml" href="/icon-logo.svg" />
+    <link rel="apple-touch-icon" href="/icon-logo.svg" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Summary" />
+
+    <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Theme detector (Dark Mode by System or Time of Day) -->
     <script is:inline>
       (function () {
         function resolveTheme() {
@@ -45,6 +79,11 @@ const {
         } catch (_) {}
       })();
     </script>
+
+    <!-- Schema.org JSON-LD Structured Data (GEO / Semantic Web) -->
+    {jsonLd && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+    )}
   </head>
   <body>
     <slot />

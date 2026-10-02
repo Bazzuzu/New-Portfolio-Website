@@ -4,11 +4,125 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
 import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
 import Footer from '../components/Footer.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://new.lexkonovalov.com/about#profile",
+      "url": "https://new.lexkonovalov.com/about",
+      "name": "About Oleksandr Konovalov — Lead Product Designer",
+      "description": "Marketing roots, systemic thinking, B2B architecture, and the pre-emptive interview.",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://new.lexkonovalov.com/#person",
+        "name": "Oleksandr Konovalov",
+        "alternateName": ["Lex Konovalov"],
+        "jobTitle": "Lead Product Designer",
+        "image": "https://new.lexkonovalov.com/og-image.png",
+        "url": "https://new.lexkonovalov.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/lex-konovalov",
+          "https://github.com/Bazzuzu",
+          "https://drive.google.com/file/d/1abYC91Gx0G_dNBBC-tOrIXlTc2Wrfx_u/view?usp=sharing"
+        ],
+        "knowsAbout": [
+          "Object-Oriented UX (OOUX)",
+          "Design Systems",
+          "TravelTech ERP",
+          "Conversion Rate Optimization",
+          "Rapid AI Prototyping"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://new.lexkonovalov.com/about#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you handle collaboration across EU and US time zones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I structure my day with substantial afternoon/evening overlap with US East and West Coast teams, relying heavily on asynchronous documentation, Loom walkthroughs, and clear ticket handoffs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do you insist on Object-Oriented UX (OOUX) before wireframing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OOUX prevents cognitive overload and UI fragmentation. Mapping objects, relationships, and metadata before drawing screens ensures the design aligns directly with underlying databases and engineering realities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "You work in both dense B2B systems and B2C conversion. Aren't those conflicting mindsets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They complement each other. B2B trains systems architecture, data density, and edge-case resilience, while B2C instills rigorous conversion optimization, speed, and friction reduction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you approach designing for legacy systems like Salesforce SLDS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By respecting existing component constraints and database boundaries first, identifying high-impact UX bottlenecks, and refactoring incrementally rather than proposing unfeasible total rewrites."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What exactly makes your design systems \"AI-adaptive\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Semantic token structures, machine-readable specifications, and strict OOUX relationships that LLMs and AI coding agents can parse and execute reliably without hallucinations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your approach when a project lacks data or clear requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I map the known business logic, interview frontline stakeholders (support, sales, account managers), and build rapid interactive prototypes to stress-test assumptions and extract concrete feedback."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your work authorization and preferred contract setup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Direct B2B contract or international payroll/EOR (Deel, Remote). Fully compliant with EU and international tax and invoicing regulations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What team structures are you most comfortable in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross-functional triads (Product, Design, Engineering) with high autonomy, clear ownership, and direct communication channels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your working languages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "English (fluent, full professional proficiency) and Ukrainian (native)."
+          }
+        }
+      ]
+    }
+  ]
+};
 ---
 
 <BaseLayout
   title="About — Oleksandr Konovalov"
   description="Marketing roots, systemic thinking, B2B architecture, and the pre-emptive interview."
+  type="profile"
+  jsonLd={jsonLd}
 >
   <div class="home-canvas">
     <main class="content-column home-main">
