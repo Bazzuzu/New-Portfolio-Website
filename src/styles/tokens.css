@@ -80,7 +80,7 @@
   --z-tooltip: 100;
   --card-width-sm: 20rem;        /* 320px */
   --card-width-portrait: 15rem;  /* 240px */
-  --author-photo-size: 226px;    /* 226px — круглый портрет автора */
+  --author-photo-size: 7.5rem;    /* 120px — круглый портрет автора */
   --duration-fast: 0.15s;
   --ease-default: ease;
 }
