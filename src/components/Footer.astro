@@ -1,0 +1,93 @@
+---
+/**
+ * Site Footer Component
+ * On desktop (>= 769px): Sticky-bottom edge-to-edge spread across the viewport.
+ * Copyright on the left, contacts & CV on the right.
+ * On mobile/tablet (< 769px): In-flow at the bottom of the content column.
+ */
+---
+
+<footer class="site-footer text-body-2 text-disabled">
+  <span class="footer-copy">&copy; Lex Konovalov / 2026</span>
+  <nav class="footer-nav" aria-label="Social and contacts">
+    <a href="/cv" class="footer-link">CV</a>
+    <span class="footer-sep">/</span>
+    <a href="mailto:lex.konovalov@gmail.com" class="footer-link">lex.konovalov@gmail.com</a>
+    <span class="footer-sep">/</span>
+    <a href="https://linkedin.com/in/alexkonovalov" target="_blank" rel="noopener noreferrer" class="footer-link">Linkedin</a>
+  </nav>
+</footer>
+
+<style>
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-copy {
+    color: var(--color-text-disabled);
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: opacity var(--duration-fast) var(--ease-default);
+  }
+
+  .footer-link:hover,
+  .footer-link:focus-visible {
+    opacity: 0.75;
+  }
+
+  .footer-sep {
+    color: var(--color-text-disabled);
+    user-select: none;
+  }
+
+  /* Desktop: Sticky-bottom spread edge-to-edge */
+  @media (min-width: 769px) {
+    .site-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-inline: var(--space-8);
+      padding-block: var(--space-4);
+      background-color: var(--color-canvas);
+      z-index: 10;
+    }
+  }
+
+  /* Mobile/Tablet: In-flow within content column */
+  @media (max-width: 768px) {
+    .site-footer {
+      max-width: var(--content-width-md);
+      margin-inline: auto;
+      padding-inline: var(--space-4);
+      padding-block: var(--space-8) var(--canvas-py-md);
+    }
+  }
+
+  /* Small mobile: Stack vertically */
+  @media (max-width: 500px) {
+    .site-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+  }
+</style>

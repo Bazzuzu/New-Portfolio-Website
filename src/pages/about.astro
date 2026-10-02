@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
 import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout
@@ -278,18 +279,8 @@ import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
         </ul>
       </section>
 
-      <!-- 5. Footer -->
-      <footer class="home-footer text-body-2 text-disabled">
-        <span class="footer-copy">&copy; Lex Konovalov / 2026</span>
-        <nav class="footer-nav" aria-label="Social and contacts">
-          <a href="/cv" class="footer-link">CV</a>
-          <span class="footer-sep">/</span>
-          <a href="mailto:lex.konovalov@gmail.com" class="footer-link">lex.konovalov@gmail.com</a>
-          <span class="footer-sep">/</span>
-          <a href="https://linkedin.com/in/alexkonovalov" target="_blank" rel="noopener noreferrer" class="footer-link">Linkedin</a>
-        </nav>
-      </footer>
     </main>
+    <Footer />
   </div>
   <PragmaticToolkitModal />
 </BaseLayout>
@@ -300,13 +291,20 @@ import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
      ========================================================================== */
   .home-canvas {
     min-height: 100vh;
-    padding-block: var(--canvas-py-md);
+    padding-top: var(--canvas-py-md);
+    padding-bottom: 0;
   }
 
   .home-main {
     display: flex;
     flex-direction: column;
     gap: var(--section-gap-md);
+  }
+
+  @media (min-width: 769px) {
+    .home-main {
+      padding-bottom: calc(var(--space-16) + var(--space-4));
+    }
   }
 
   /* ==========================================================================
@@ -478,52 +476,4 @@ import PragmaticToolkitModal from '../components/PragmaticToolkitModal.astro';
     background-color: var(--color-surface-subtle);
   }
 
-  /* ==========================================================================
-     Footer
-     ========================================================================== */
-  .home-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--space-4);
-    margin-top: 0;
-  }
-
-  .footer-copy {
-    color: var(--color-text-disabled);
-  }
-
-  .footer-nav {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-  }
-
-  .footer-link {
-    color: var(--color-text-link);
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-    text-decoration-thickness: 1px;
-    transition: opacity var(--duration-fast) var(--ease-default);
-  }
-
-  .footer-link:hover,
-  .footer-link:focus-visible {
-    opacity: 0.75;
-  }
-
-  .footer-sep {
-    color: var(--color-text-disabled);
-    user-select: none;
-  }
-
-  /* Mobile adjustment for footer */
-  @media (max-width: 500px) {
-    .home-footer {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--space-2);
-    }
-  }
 </style>
