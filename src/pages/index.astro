@@ -1,0 +1,489 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import travelOsImg from '../../content/work/cases/building-the-os-for-travel/media/travel-os-booking-matrix-desktop.png';
+import mobileLeadGenImg from '../../content/work/cases/optimizing-mobile-lead-gen/media/mobile-lead-gen-preview-desktop.png';
+import homepageFunnelImg from '../../content/work/cases/homepage-funnel-structure/media/homepage-funnel-matrix-desktop.png';
+import newsletterFormImg from '../../content/work/concepts/designing-my-first-newsletter-form-after-10-years-in-ux/media/newsletter-form-lead-capture-desktop.png';
+import aiPrototypingImg from '../../content/work/concepts/how-ai-augmented-prototyping-cut-b2b-design-time-by-90/media/ai-augmented-prototyping-b2b-matrix-desktop.png';
+import authorImg from '../../content/author/media/author-oleksandr-konovalov-portrait.png';
+---
+
+<BaseLayout
+  title="Oleksandr Konovalov — Lead Product Designer"
+  description="Lead Product Designer in TravelTech. Mapping complex logic. Optimizing conversion."
+>
+  <div class="home-canvas">
+    <main class="content-column home-main">
+      <!-- 0. Brand Logo Mark -->
+      <header class="home-brand">
+        <a href="/" class="brand-link" aria-label="Oleksandr Konovalov Home">
+          <svg class="brand-logo" width="37" height="32" viewBox="0 0 37 32" fill="none" aria-hidden="true">
+            <path d="M20.5596 0.120946L27.7499 0L31.2404 6.2793L29.1809 9.84149H33.2998L37 15.9998L33.2998 22.1582H29.1806L31.2404 25.7207L27.7499 32L20.5596 31.8791L18.4998 28.3169C18.4998 21.5146 24.0217 16.0002 30.8331 16.0002C24.0218 16.0001 18.5001 10.4858 18.4998 3.68375L20.5596 0.120946ZM3.70016 9.84149H7.81877L5.75962 6.2793L9.25008 0L16.4404 0.120946L18.4998 3.68375C18.4996 10.4859 12.9779 16.0002 6.16662 16.0002C12.9781 16.0002 18.4998 21.5145 18.4998 28.3169L16.4404 31.8791L9.25008 32L5.75962 25.7207L7.81908 22.1582H3.70016L0 15.9998L3.70016 9.84149Z" fill="currentColor"/>
+          </svg>
+        </a>
+      </header>
+
+      <!-- 1. Identity Block -->
+      <section class="block-header">
+        <h1 class="text-heading">
+          <span class="preview-wrap">
+            <a href="/about" class="identity-link">Oleksandr Konovalov</a>
+            <span class="preview-card preview-card--portrait" role="tooltip" aria-hidden="true">
+              <Image
+                src={authorImg}
+                alt="Oleksandr Konovalov"
+                width={480}
+                height={480}
+                class="preview-img preview-img--portrait"
+              />
+            </span>
+          </span>
+        </h1>
+        <p class="text-body-md text-secondary">
+          Lead Product Designer
+        </p>
+      </section>
+
+      <!-- 2. Value Proposition / Bio Block -->
+      <section class="block-header">
+        <h2 class="text-heading">
+          Mapping complex logic. Optimizing conversion.
+        </h2>
+        <p class="text-body-1 text-secondary">
+          I use <span class="tooltip-wrap">
+            <a href="#ooux" class="inline-link" aria-describedby="tooltip-ooux">Object-Oriented UX</a>
+            <span id="tooltip-ooux" class="tooltip-card tooltip-card--left" role="tooltip">
+              I’ve been practicing Object-Oriented UX since 2017 and remain active in the OOUX community. I use object mapping to define product structure, relationships, and workflows before moving into screens and UI—and more recently, as a foundation for structuring data for LLMs.
+            </span>
+          </span> to map dense <span class="tooltip-wrap">
+            <a href="#b2b" class="inline-link" aria-describedby="tooltip-b2b">B2B</a>
+            <span id="tooltip-b2b" class="tooltip-card tooltip-card--center" role="tooltip">
+              Most of my recent product work is in B2B and enterprise software, including TravelTech ERPs, internal tools, and operational platforms. I work on products where the interface is only the visible part of a much larger business logic—and where reducing friction without hiding that logic is the real design challenge.
+            </span>
+          </span> platforms and data to optimize <span class="tooltip-wrap">
+            <a href="#b2c" class="inline-link" aria-describedby="tooltip-b2c">B2C</a>
+            <span id="tooltip-b2c" class="tooltip-card tooltip-card--center" role="tooltip">
+              I use product design to improve conversion across acquisition, lead generation, and checkout. My B2C work includes paywall and listing optimization for Lemonfrog, the full mobile journey for CheapOair, and ongoing lead-generation and checkout optimization in TravelTech.
+            </span>
+          </span> checkouts. 5+ years as a Core Product Designer in TravelTech. Currently scaling architectures with <span class="tooltip-wrap">
+            <a href="#ai" class="inline-link" aria-describedby="tooltip-ai">AI-integrated</a>
+            <span id="tooltip-ai" class="tooltip-card tooltip-card--left" role="tooltip">
+              I work with AI both as a product capability and as part of the design process. I’ve built an AI landing-page generator from concept to working prototype, while exploring semantic design systems structured for engineers, accessibility tools, and LLMs.
+            </span>
+          </span> design systems and semantic tokens.
+        </p>
+      </section>
+
+      <!-- 3. Selected Works Block -->
+      <section class="block-section">
+        <h2 class="text-heading">Selected Works</h2>
+        <p class="text-body-md text-secondary">
+          Untangling legacy systems. Scaling UI architecture. Driving B2C revenue.
+        </p>
+        <ul class="item-list">
+          <li>
+            <span class="preview-wrap">
+              <a href="/work/building-the-os-for-travel" class="text-body-1 item-link">
+                Building the OS for Travel
+              </a>
+              <span class="preview-card" role="tooltip" aria-hidden="true">
+                <Image
+                  src={travelOsImg}
+                  alt="Building the OS for Travel preview"
+                  width={600}
+                  height={448}
+                  class="preview-img"
+                />
+              </span>
+            </span>
+          </li>
+          <li>
+            <span class="preview-wrap">
+              <a href="/work/optimizing-mobile-lead-gen" class="text-body-1 item-link">
+                Optimizing Mobile Lead Gen
+              </a>
+              <span class="preview-card" role="tooltip" aria-hidden="true">
+                <Image
+                  src={mobileLeadGenImg}
+                  alt="Optimizing Mobile Lead Gen preview"
+                  width={600}
+                  height={448}
+                  class="preview-img"
+                />
+              </span>
+            </span>
+          </li>
+          <li>
+            <span class="preview-wrap">
+              <a href="/work/homepage-funnel-structure" class="text-body-1 item-link">
+                Homepage & Funnel Structure
+              </a>
+              <span class="preview-card" role="tooltip" aria-hidden="true">
+                <Image
+                  src={homepageFunnelImg}
+                  alt="Homepage & Funnel Structure preview"
+                  width={600}
+                  height={448}
+                  class="preview-img"
+                />
+              </span>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. Concepts & Architecture Block -->
+      <section class="block-section">
+        <h2 class="text-heading">Concepts & Architecture</h2>
+        <p class="text-body-md text-secondary">
+          Not every project needs a 10-page case study. Here is a collection of rapid AI prototypes, semantic token structures, and smaller systemic wins.
+        </p>
+        <ul class="item-list">
+          <li>
+            <span class="preview-wrap">
+              <a href="/work/designing-my-first-newsletter-form-after-10-years-in-ux" class="text-body-1 item-link">
+                Designing My First Newsletter Form After 10 Years In UX
+              </a>
+              <span class="preview-card" role="tooltip" aria-hidden="true">
+                <Image
+                  src={newsletterFormImg}
+                  alt="Designing My First Newsletter Form After 10 Years In UX preview"
+                  width={600}
+                  height={448}
+                  class="preview-img"
+                />
+              </span>
+            </span>
+          </li>
+          <li>
+            <span class="preview-wrap">
+              <a href="/work/how-ai-augmented-prototyping-cut-b2b-design-time-by-90" class="text-body-1 item-link">
+                How AI-Augmented Prototyping Cut B2B Design Time by 90%
+              </a>
+              <span class="preview-card" role="tooltip" aria-hidden="true">
+                <Image
+                  src={aiPrototypingImg}
+                  alt="How AI-Augmented Prototyping Cut B2B Design Time by 90% preview"
+                  width={600}
+                  height={448}
+                  class="preview-img"
+                />
+              </span>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. Footer -->
+      <footer class="home-footer text-body-2 text-disabled">
+        <span class="footer-copy">&copy; Lex Konovalov / 2026</span>
+        <nav class="footer-nav" aria-label="Social and contacts">
+          <a href="/cv" class="footer-link">CV</a>
+          <span class="footer-sep">/</span>
+          <a href="mailto:lex.konovalov@gmail.com" class="footer-link">lex.konovalov@gmail.com</a>
+          <span class="footer-sep">/</span>
+          <a href="https://linkedin.com/in/alexkonovalov" target="_blank" rel="noopener noreferrer" class="footer-link">Linkedin</a>
+        </nav>
+      </footer>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  /* ==========================================================================
+     Home Canvas & Vertical Rhythm
+     ========================================================================== */
+  .home-canvas {
+    min-height: 100vh;
+    padding-block: var(--canvas-py-md);
+  }
+
+  .home-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap-md);
+  }
+
+  /* ==========================================================================
+     Logo / Brand
+     ========================================================================== */
+  .home-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .brand-link:hover {
+    opacity: 0.7;
+  }
+
+  .brand-logo {
+    width: 37px;
+    height: 32px;
+  }
+
+  /* ==========================================================================
+     Block Sections & Headers
+     ========================================================================== */
+  .block-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--container-gap-sm);
+  }
+
+  .block-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--container-gap-xs);
+  }
+
+  /* ==========================================================================
+     Color Tone Utility Application
+     ========================================================================== */
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .text-disabled,
+  .text-tertiary {
+    color: var(--color-text-disabled);
+  }
+
+  /* ==========================================================================
+     Links & Lists
+     ========================================================================== */
+  .identity-link {
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: opacity var(--duration-fast) var(--ease-default);
+  }
+
+  .identity-link:hover {
+    opacity: 0.75;
+  }
+
+  .inline-link {
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: opacity var(--duration-fast) var(--ease-default);
+  }
+
+  .inline-link:hover {
+    opacity: 0.75;
+  }
+
+  /* ==========================================================================
+     Tooltips (Pure Modern CSS, 0kb JS)
+     ========================================================================== */
+  .tooltip-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-card {
+    position: absolute;
+    bottom: calc(100% + var(--space-2));
+    width: 320px;
+    max-width: min(320px, calc(100vw - var(--space-8)));
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    font-size: var(--text-body-sm-size);
+    line-height: var(--text-body-sm-line);
+    font-weight: var(--font-weight-regular);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-tooltip);
+    z-index: var(--z-tooltip);
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  }
+
+  .tooltip-card--left {
+    left: 0;
+    transform: translateY(4px);
+  }
+
+  .tooltip-card--center {
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+  }
+
+  .tooltip-wrap:hover .tooltip-card--left,
+  .tooltip-wrap:focus-within .tooltip-card--left {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .tooltip-wrap:hover .tooltip-card--center,
+  .tooltip-wrap:focus-within .tooltip-card--center {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* ==========================================================================
+     Case Study Preview Popovers (Pure Modern CSS, 0kb JS)
+     ========================================================================== */
+  .preview-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .preview-card {
+    position: absolute;
+    left: calc(100% + var(--space-4));
+    top: 50%;
+    transform: translateY(-50%) translateX(-4px);
+    width: var(--card-width-sm);
+    max-width: min(var(--card-width-sm), calc(100vw - var(--space-8)));
+    padding: 0;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-tooltip);
+    overflow: hidden;
+    line-height: 0;
+    z-index: var(--z-tooltip);
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-fast) var(--ease-default), transform var(--duration-fast) var(--ease-default), visibility var(--duration-fast) var(--ease-default);
+  }
+
+  .preview-wrap:hover .preview-card,
+  .preview-wrap:focus-within .preview-card {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+
+  .preview-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 896;
+    object-fit: cover;
+    border-radius: calc(var(--radius-md) - 1px);
+  }
+
+  .preview-card--portrait {
+    width: var(--card-width-portrait);
+    max-width: min(var(--card-width-portrait), calc(100vw - var(--space-8)));
+    border-radius: var(--radius-full);
+  }
+
+  .preview-img--portrait {
+    aspect-ratio: 1 / 1;
+    object-position: center top;
+    border-radius: var(--radius-full);
+  }
+
+  /* Responsive fallback: on narrow screens, position above link to prevent overflow */
+  @media (max-width: 640px) {
+    .preview-card {
+      left: 0;
+      top: auto;
+      bottom: calc(100% + var(--space-2));
+      transform: translateY(4px);
+    }
+
+    .preview-wrap:hover .preview-card,
+    .preview-wrap:focus-within .preview-card {
+      transform: translateY(0);
+    }
+  }
+
+  .item-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--container-gap-sm);
+    margin: 0;
+    padding: 0;
+  }
+
+  .item-link {
+    display: inline-block;
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    width: fit-content;
+    transition: opacity var(--duration-fast) var(--ease-default);
+  }
+
+  .item-link:hover {
+    opacity: 0.75;
+  }
+
+  /* ==========================================================================
+     Footer
+     ========================================================================== */
+  .home-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-top: 0;
+  }
+
+  .footer-copy {
+    color: var(--color-text-disabled);
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .footer-link {
+    color: var(--color-text-link);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 1px;
+    transition: opacity var(--duration-fast) var(--ease-default);
+  }
+
+  .footer-link:hover,
+  .footer-link:focus-visible {
+    opacity: 0.75;
+  }
+
+  .footer-sep {
+    color: var(--color-text-disabled);
+    user-select: none;
+  }
+
+  /* Mobile adjustment for footer */
+  @media (max-width: 500px) {
+    .home-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+  }
+</style>

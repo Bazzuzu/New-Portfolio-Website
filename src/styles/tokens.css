@@ -1,0 +1,79 @@
+/**
+ * Design Tokens — Minimalist Baseline
+ * Typography: Geist (Medium, Regular)
+ * Palette: 88%, 64%, 40% black
+ * Layout: 560px content column
+ */
+
+:root {
+  /* ==========================================================================
+     Typography: Geist
+     ========================================================================== */
+  --font-sans: 'Geist', system-ui, -apple-system, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* 3 Typography Styles */
+  /* Заголовок: 18 / 120% / Medium */
+  --text-heading-size: 1.125rem;   /* 18px */
+  --text-heading-line: 1.2;        /* 120% */
+  --text-heading-weight: var(--font-weight-medium);
+
+  /* Параграф 1 (Body MD): 16 / 160% / Regular */
+  --text-body-md-size: 1rem;       /* 16px */
+  --text-body-md-line: 1.6;        /* 160% */
+  --text-body-md-weight: var(--font-weight-regular);
+  --text-body-1-size: var(--text-body-md-size);
+  --text-body-1-line: var(--text-body-md-line);
+  --text-body-1-weight: var(--text-body-md-weight);
+
+  /* Параграф 2 (Body SM): 14 / 160% / Regular */
+  --text-body-sm-size: 0.875rem;   /* 14px */
+  --text-body-sm-line: 1.6;        /* 160% */
+  --text-body-sm-weight: var(--font-weight-regular);
+  --text-body-2-size: var(--text-body-sm-size);
+  --text-body-2-line: var(--text-body-sm-line);
+  --text-body-2-weight: var(--text-body-sm-weight);
+
+  /* ==========================================================================
+     Colors: 3 Tones of Black + Canvas
+     ========================================================================== */
+  --color-canvas: #ffffff;
+  --color-text-primary: rgba(0, 0, 0, 0.88);   /* 88% черного */
+  --color-text-secondary: rgba(0, 0, 0, 0.64); /* 64% черного */
+  --color-text-disabled: rgba(0, 0, 0, 0.40);  /* 40% черного */
+  --color-text-tertiary: var(--color-text-disabled);  /* Alias */
+  --color-text-link: rgba(0, 0, 0, 0.88);      /* 88% черного — единый токен для всех ссылок */
+
+  /* ==========================================================================
+     Layout & Spacing
+     ========================================================================== */
+  --content-width-md: 35rem;     /* 560px */
+  --section-gap-md: 3.5rem;      /* 56px — Gap между блоками */
+  --container-gap-xs: 0.25rem;   /* 4px — Gap между заголовком и параграфами */
+  --container-gap-sm: 0.25rem;   /* 4px */
+  --canvas-py-md: 2.5rem;        /* 40px — Паддинг до логотипа сверху и до футера снизу */
+
+  /* Micro-spacing for lists and links */
+  --space-1: 0.25rem;            /* 4px */
+  --space-2: 0.5rem;             /* 8px */
+  --space-3: 0.75rem;            /* 12px */
+  --space-4: 1rem;               /* 16px */
+  --space-6: 1.5rem;             /* 24px */
+  --space-8: 2rem;               /* 32px */
+
+  /* Components: Surface, Border, Radius, Shadow */
+  --color-surface: #ffffff;
+  --color-surface-subtle: rgba(0, 0, 0, 0.02); /* 2% черного — подложка для карточек */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 9999px;
+  --shadow-tooltip: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --z-tooltip: 100;
+  --card-width-sm: 20rem;        /* 320px */
+  --card-width-portrait: 15rem;  /* 240px */
+  --duration-fast: 0.15s;
+  --ease-default: ease;
+}

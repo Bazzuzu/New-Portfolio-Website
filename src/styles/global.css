@@ -1,0 +1,113 @@
+/**
+ * Global Stylesheet & Reset
+ * Clean, lightweight, strictly token-driven.
+ */
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-1-size);
+  line-height: var(--text-body-1-line);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Typography Primitives
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-heading-size);
+  line-height: var(--text-heading-line);
+  font-weight: var(--text-heading-weight);
+  color: var(--color-text-primary);
+}
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+  transition: opacity var(--duration-fast) var(--ease-default);
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography Utility Classes */
+.text-heading {
+  font-size: var(--text-heading-size);
+  line-height: var(--text-heading-line);
+  font-weight: var(--text-heading-weight);
+  color: var(--color-text-primary);
+}
+
+.text-body-md,
+.text-body-1 {
+  font-size: var(--text-body-md-size);
+  line-height: var(--text-body-md-line);
+  font-weight: var(--text-body-md-weight);
+}
+
+.text-body-sm,
+.text-body-2 {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-line);
+  font-weight: var(--text-body-sm-weight);
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-disabled,
+.text-tertiary {
+  color: var(--color-text-disabled);
+}
+
+/* Content Container (560px max width) */
+.content-column {
+  width: 100%;
+  max-width: var(--content-width-md);
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
