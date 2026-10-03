@@ -194,7 +194,7 @@ const jsonLd = {
               <a href="/work/designing-my-first-newsletter-form-after-10-years-in-ux" class="text-body-1 item-link">
                 Designing My First Newsletter Form After 10 Years In UX
               </a>
-              <span class="preview-card" role="tooltip" aria-hidden="true">
+              <span class="preview-card preview-card--bottom" role="tooltip" aria-hidden="true">
                 <Image
                   src={newsletterFormImg}
                   alt="Designing My First Newsletter Form After 10 Years In UX preview"
@@ -210,7 +210,7 @@ const jsonLd = {
               <a href="/work/how-ai-augmented-prototyping-cut-b2b-design-time-by-90" class="text-body-1 item-link">
                 How AI-Augmented Prototyping Cut B2B Design Time by 90%
               </a>
-              <span class="preview-card" role="tooltip" aria-hidden="true">
+              <span class="preview-card preview-card--bottom" role="tooltip" aria-hidden="true">
                 <Image
                   src={aiPrototypingImg}
                   alt="How AI-Augmented Prototyping Cut B2B Design Time by 90% preview"
@@ -447,9 +447,21 @@ const jsonLd = {
     border-radius: var(--radius-full);
   }
 
+  .preview-card--bottom {
+    top: auto;
+    bottom: 0;
+    transform: translateY(0) translateX(-4px);
+  }
+
+  .preview-wrap:hover .preview-card--bottom,
+  .preview-wrap:focus-within .preview-card--bottom {
+    transform: translateY(0) translateX(0);
+  }
+
   /* Responsive fallback: on narrow screens, position above link to prevent overflow */
   @media (max-width: 640px) {
-    .preview-card {
+    .preview-card,
+    .preview-card--bottom {
       left: 0;
       top: auto;
       bottom: calc(100% + var(--space-2));
@@ -457,7 +469,9 @@ const jsonLd = {
     }
 
     .preview-wrap:hover .preview-card,
-    .preview-wrap:focus-within .preview-card {
+    .preview-wrap:focus-within .preview-card,
+    .preview-wrap:hover .preview-card--bottom,
+    .preview-wrap:focus-within .preview-card--bottom {
       transform: translateY(0);
     }
   }
